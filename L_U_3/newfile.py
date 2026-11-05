@@ -14,9 +14,16 @@
 #     print(f"current count {count}")
 #     count += 1
 
-fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+# fruits = ["apple", "banana", "cherry", "date", "elderberry"]
 
-fruits.append("fig")
-print(fruits)
-fruits.insert(2, "grape")
-print(fruits)
+# fruits.append("fig")
+# print(fruits)
+# fruits.insert(2, "grape")
+# print(fruits)
+
+
+count = 1
+
+while True:
+    print(f"current count {count}")
+    count += 1
