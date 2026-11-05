@@ -27,3 +27,5 @@ count = 1
 while True:
     print(f"current count {count}")
     count += 1
+    if count > 5:
+        break
