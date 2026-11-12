@@ -32,7 +32,7 @@
     
     
     
-    class Student:
+class Student:
   
     def accept_marks(self, m1, m2, m3):
         self.mark1 = m1
