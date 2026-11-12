@@ -12,14 +12,21 @@
 # barinda()
 
 
-def check_even_odd(number):
-    if number % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
+# def check_even_odd(number):
+#     if number % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
     
     
-n = check_even_odd(10)
+# n = check_even_odd(10)
 
-print("The number is ", n)
+# print("The number is ", n)
+    
+    
+def calculate(num1,num2):
+    sum = num1 + num2
+    print("The sum is:", sum)
+    
+calculate(5, 10)
     
