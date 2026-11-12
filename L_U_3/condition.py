@@ -1,3 +1,7 @@
-marks = int(input("Enter marks: "));
+ marks = int(input("Enter marks: "))
 
-print("marks", marks)
+
+
+status = "adult" if marks >= 18 else "minor";
+
+print("Status:", status)
