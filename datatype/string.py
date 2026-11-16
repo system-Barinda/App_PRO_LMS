@@ -86,9 +86,16 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 # print(barinda);
 
 
-tamperature = 77;
+# tamperature = 77;
 
-celecius = (tamperature - 32) * 5 / 9
+# celecius = (tamperature - 32) * 5 / 9
 
-print("celecius tamperature: ", celecius);
+# print("celecius tamperature: ", celecius);
 
+
+def fahrenheit_to_celsius(fahrenheit):
+  return (fahrenheit - 32) * 5 / 9
+
+print(fahrenheit_to_celsius(77))
+print(fahrenheit_to_celsius(95))
+print(fahrenheit_to_celsius(50))
