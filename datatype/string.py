@@ -113,12 +113,26 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 # print(barindaTest("my name is barinda system sylvere"))
 
 
-x = 300
+# x = 300
 
-def myfunc():
-  x = 200
-  print(x)
+# def myfunc():
+#   x = 200
+#   print(x)
 
-myfunc()
+# myfunc()
 
-print(x)
+# print(x)
+
+
+x = "global"
+
+def outer():
+  x = "enclosing"
+  def inner():
+    x = "local"
+    print("Inner:", x)
+  inner()
+  print("Outer:", x)
+
+outer()
+print("Global:", x)
