@@ -3,4 +3,8 @@
 # print(barinda);
 
 # data = list(("barinda","system","sylvere"));
-# print(data)
+# print(type(data))
+
+
+data = tuple(("barinda","system","sylvere"));
+print(type(data))
