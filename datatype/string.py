@@ -107,7 +107,18 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 
 # print(barindaTest("my name is barinda system sylvere"))
 
-def barindaTest(text):
-    return text
+# def barindaTest(text):
+#     return text
 
-print(barindaTest("my name is barinda system sylvere"))
+# print(barindaTest("my name is barinda system sylvere"))
+
+
+x = 300
+
+def myfunc():
+  x = 200
+  print(x)
+
+myfunc()
+
+print(x)
