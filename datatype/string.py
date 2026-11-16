@@ -43,9 +43,16 @@
 # print(list1,list2,list3)
 
 
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 
-if "apple" in thislist:
-    print("yes, 'apple' is in the fruits list");
+# if "apple" in thislist:
+#     print("yes, 'apple' is in the fruits list");
     
+    
+
+student = ["barinda","system","sylvere","barinda","system","sylvere"];
+student1 = ["iradukunda","sandrine","audreille","isimbi"];
+
+student.extend(student1);
+print(student);
 
