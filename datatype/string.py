@@ -21,3 +21,16 @@ print(len(thisList))
 list1 = ["apple", "banana", "cherry"]
 list2 = [1, 5, 7, 9, 3]
 list3 = [True, False, False]
+
+
+listbarinda = ["abc", 34, True, 40, "male"]
+
+    
+    
+    for(item in listbarinda):
+        print(item)
+
+
+
+
+# print(list1,list2,list3)
