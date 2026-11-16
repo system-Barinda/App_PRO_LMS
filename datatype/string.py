@@ -26,9 +26,11 @@ list3 = [True, False, False]
 listbarinda = ["abc", 34, True, 40, "male"]
 
     
+newList = []
+for item in listbarinda:
     
-    for(item in listbarinda):
-        print(item)
+  
+    print(item)
 
 
 
