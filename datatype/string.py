@@ -70,4 +70,8 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 #      x += 1
 
 
-[print(x, student[x]) for x in range(len(student))];
+# [print(x, student[x]) for x in range(len(student))];
+
+# [print(x, student[x]) for x in range(len(student)) if student[x] == "barinda"];
+
+[print(item, student[item]) for item in range(len(student)) if student[item] == "barinda"]
