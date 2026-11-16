@@ -124,15 +124,32 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 # print(x)
 
 
-x = "global"
+# x = "global"
 
-def outer():
-  x = "enclosing"
-  def inner():
-    x = "local"
-    print("Inner:", x)
-  inner()
-  print("Outer:", x)
+# def outer():
+#   x = "enclosing"
+#   def inner():
+#     x = "local"
+#     print("Inner:", x)
+#   inner()
+#   print("Outer:", x)
 
-outer()
-print("Global:", x)
+# outer()
+# print("Global:", x)
+
+def changecase(n):
+  def changecase(func):
+    def myinner():
+      if n == 1:
+        a = func().lower()
+      else:
+        a = func().upper()
+      return a
+    return myinner
+  return changecase
+
+@changecase(1)
+def myfunction():
+  return "Hello Linus"
+
+print(myfunction())
