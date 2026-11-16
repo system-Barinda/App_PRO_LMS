@@ -93,9 +93,21 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 # print("celecius tamperature: ", celecius);
 
 
-def fahrenheit_to_celsius(fahrenheit):
-  return (fahrenheit - 32) * 5 / 9
+# def fahrenheit_to_celsius(fahrenheit):
+#   return (fahrenheit - 32) * 5 / 9
 
-print(fahrenheit_to_celsius(77))
-print(fahrenheit_to_celsius(95))
-print(fahrenheit_to_celsius(50))
+# print(fahrenheit_to_celsius(77))
+# print(fahrenheit_to_celsius(95))
+# print(fahrenheit_to_celsius(50))
+
+
+# def barindaTest():
+#     pass
+
+
+# print(barindaTest("my name is barinda system sylvere"))
+
+def barindaTest(text):
+    return text
+
+print(barindaTest("my name is barinda system sylvere"))
