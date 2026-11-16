@@ -63,10 +63,11 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
     
  
  
-x = 0;
+# x = 0;
  
-while x < len(student):
-     print(x, student[x])
-     x += 1
+# while x < len(student):
+#      print(x, student[x])
+#      x += 1
 
 
+[print(x, student[x]) for x in range(len(student))];
