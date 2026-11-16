@@ -155,12 +155,28 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 # print(myfunction())
 
 
-def barinda():
-    print("hello world lived by barinda system sylvere")
+# def barinda():
+#     print("hello world lived by barinda system sylvere")
     
+# @barinda(1)
+# def barinda1(num):    
+#     print("hello world lived by barinda system sylvere and having this number", num)
+        
+# barinda1(100)    
+    
+    
+# A decorator factory that accepts an argument (e.g., num)
+def barinda(decorator_num):
+    def actual_decorator(func):
+        def wrapper(num):
+            print("hello world lived by barinda system sylvere")
+            print("decorator got number:", decorator_num)
+            return func(num)
+        return wrapper
+    return actual_decorator
+
 @barinda(1)
 def barinda1(num):    
     print("hello world lived by barinda system sylvere and having this number", num)
         
 barinda1(100)    
-    
