@@ -74,4 +74,21 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 
 # [print(x, student[x]) for x in range(len(student)) if student[x] == "barinda"];
 
-[print(item, student[item]) for item in range(len(student)) if student[item] == "barinda"]
+# [print(item, student[item]) for item in range(len(student)) if student[item] == "barinda"]
+
+
+# def myfunc(n):
+#     return n
+
+
+# barinda = myfunc("hello world");
+
+# print(barinda);
+
+
+tamperature = 77;
+
+celecius = (tamperature - 32) * 5 / 9
+
+print("celecius tamperature: ", celecius);
+
