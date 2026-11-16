@@ -1,3 +1,6 @@
-barinda = str("hello world");
+# barinda = str("hello world");
 
-print(barinda);
+# print(barinda);
+
+# data = list(("barinda","system","sylvere"));
+# print(data)
