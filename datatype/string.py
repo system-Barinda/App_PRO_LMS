@@ -137,19 +137,30 @@ student = ["barinda","system","sylvere","barinda","system","sylvere"]
 # outer()
 # print("Global:", x)
 
-def changecase(n):
-  def changecase(func):
-    def myinner():
-      if n == 1:
-        a = func().lower()
-      else:
-        a = func().upper()
-      return a
-    return myinner
-  return changecase
+# def changecase(n):
+#   def changecase(func):
+#     def myinner():
+#       if n == 1:
+#         a = func().lower()
+#       else:
+#         a = func().upper()
+#       return a
+#     return myinner
+#   return changecase
 
-@changecase(1)
-def myfunction():
-  return "Hello Linus"
+# @changecase(1)
+# def myfunction():
+#   return "Hello Linus"
 
-print(myfunction())
+# print(myfunction())
+
+
+def barinda():
+    print("hello world lived by barinda system sylvere")
+    
+@barinda(1)
+def barinda1(num):    
+    print("hello world lived by barinda system sylvere and having this number", num)
+        
+barinda1(100)    
+    
