@@ -45,4 +45,7 @@
 
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 
-print(thislist[2:])
+if "apple" in thislist:
+    print("yes, 'apple' is in the fruits list");
+    
+
