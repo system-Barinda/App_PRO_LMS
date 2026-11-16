@@ -50,9 +50,17 @@
     
     
 
-student = ["barinda","system","sylvere","barinda","system","sylvere"];
-student1 = ["iradukunda","sandrine","audreille","isimbi"];
+# student = ["barinda","system","sylvere","barinda","system","sylvere"];
+# student1 = ["iradukunda","sandrine","audreille","isimbi"];
 
-student.extend(student1);
-print(student);
+# student.extend(student1);
+# print(student);
+
+student = ["barinda","system","sylvere","barinda","system","sylvere"]
+
+for x in range(len(student)):
+    print(x,student[x])
+    
+ 
+
 
