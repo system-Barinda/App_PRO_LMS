@@ -26,11 +26,20 @@ list3 = [True, False, False]
 listbarinda = ["abc", 34, True, 40, "male"]
 
     
-newList = []
-for item in listbarinda:
+newList = [x for x in listbarinda if isinstance(x, str)]
+newNumber = [ item for item in listbarinda if isinstance(item, int)];
+
+
+
+print("the string values :", newList);
+print("the numbers values :", newNumber);
+
+# for item in listbarinda:
     
   
-    print(item)
+#     print(item)
+
+
 
 
 
