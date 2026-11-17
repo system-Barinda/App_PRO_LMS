@@ -69,16 +69,28 @@
 # p2.printname()
 
 
-class Person:
-    def __init__(barinda,name,age):
-          barinda.name = name
-          barinda.age = age
+# class Person:
+#     def __init__(barinda,name,age):
+#           barinda.name = name
+#           barinda.age = age
           
-    def display(t):
-        print("name is :", t.name)
-        print("age is :", t.age)
+#     def display(t):
+#         print("name is :", t.name)
+#         print("age is :", t.age)
         
 
-newPerson = Person("iradukunda sandrine", 25);
+# newPerson = Person("iradukunda sandrine", 25);
 
-newPerson.display()              
+# newPerson.display()              
+
+class Car:
+  def __init__(self, brand, model, year):
+    self.brand = brand
+    self.model = model
+    self.year = year
+
+  def display_info(self):
+    print(f"{self.year} {self.brand} {self.model}")
+
+car1 = Car("Toyota", "Corolla", 2020)
+car1.display_info()
