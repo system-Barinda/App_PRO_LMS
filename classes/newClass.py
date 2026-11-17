@@ -5,4 +5,4 @@ class Barinda:
      x = 100
      
 system = Barinda()
-print(system.x);     
+print( 5 * system.x);     
