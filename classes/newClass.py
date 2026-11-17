@@ -67,3 +67,18 @@
 
 # p1.printname()
 # p2.printname()
+
+
+class Person:
+    def __init__(barinda,name,age):
+          barinda.name = name
+          barinda.age = age
+          
+    def display(t):
+        print("name is :", t.name)
+        print("age is :", t.age)
+        
+
+newPerson = Person("iradukunda sandrine", 25);
+
+newPerson.display()              
