@@ -83,14 +83,29 @@
 
 # newPerson.display()              
 
-class Car:
-  def __init__(self, brand, model, year):
-    self.brand = brand
-    self.model = model
-    self.year = year
+# class Car:
+#   def __init__(self, brand, model, year):
+#     self.brand = brand
+#     self.model = model
+#     self.year = year
 
-  def display_info(self):
-    print(f"{self.year} {self.brand} {self.model}")
+#   def display_info(self):
+#     print(f"{self.year} {self.brand} {self.model}")
 
-car1 = Car("Toyota", "Corolla", 2020)
-car1.display_info()
+# car1 = Car("Toyota", "Corolla", 2020)
+# car1.display_info()
+
+
+class Person:
+  def __init__(self, name):
+    self.name = name
+
+  def greet(self):
+    return "Hello, " + self.name
+
+  def welcome(self):
+    message = self.greet()
+    print(message + "! Welcome to our website.")
+
+p1 = Person("Tobias")
+p1.welcome()
