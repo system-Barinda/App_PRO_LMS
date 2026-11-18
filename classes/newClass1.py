@@ -14,13 +14,29 @@
 # print(car1.model)
 
 
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.age = age
+
+# p1 = Person("Tobias", 25)
+# print(p1.age)
+
+# p1.age = 26
+# print(p1.age)
+
+
+
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+  species = "Human" # Class property
 
-p1 = Person("Tobias", 25)
-print(p1.age)
+  def __init__(self, name):
+    self.name = name # Instance property
 
-p1.age = 26
-print(p1.age)
+p1 = Person("Emil")
+p2 = Person("Tobias")
+
+print(p1.name)
+print(p2.name)
+print(p1.species)
+print(p2.species)
