@@ -1,12 +1,28 @@
+# import json
+# test_data = {
+#     "status": "ok",
+#     "message": "Hello, JSON file!",
+#     "test_passed": True,
+# }
+# with open("test_output.json", "w", encoding="utf-8") as file:
+#   json.dump(test_data, file, indent=4)
+
+# print("JSON file created successfully.")
+
+
+
 import json
 
-test_data = {
-    "status": "ok",
-    "message": "Hello, JSON file!",
-    "test_passed": True,
-}
+file_path = "test_output.json"
 
-with open("test_output.json", "w", encoding="utf-8") as file:
-  json.dump(test_data, file, indent=4)
+# 1. Write test data
+payload = {"statement": "Testing JSON write and read", "count": 1}
+with open(file_path, "w", encoding="utf-8") as f:
+  json.dump(payload, f, indent=2)
 
-print("JSON file created successfully.")
+# 2. Read back and verify
+with open(file_path, "r", encoding="utf-8") as f:
+  loaded_data = json.load(f)
+
+assert loaded_data == payload, "Mismatch between written and read data!"
+print("Test passed! Loaded content:", loaded_data)
