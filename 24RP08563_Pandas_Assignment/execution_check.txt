@@ -1,0 +1,249 @@
+Q1 - Dataset loaded from original_dataset.csv
+\nQ2(a) First 10 rows\n    mean radius  mean texture  ...  worst fractal dimension  target
+0        17.99         10.38  ...                  0.11890       0
+1        20.57         17.77  ...                  0.08902       0
+2        19.69         21.25  ...                  0.08758       0
+3        11.42         20.38  ...                  0.17300       0
+4        20.29         14.34  ...                  0.07678       0
+5        12.45         15.70  ...                  0.12440       0
+6        18.25         19.98  ...                  0.08368       0
+7        13.71         20.83  ...                  0.11510       0
+8        13.00         21.82  ...                  0.10720       0
+9        12.46         24.04  ...                  0.20750       0
+
+[10 rows x 31 columns]
+\nQ2(b) Last 10 rows\n      mean radius  mean texture  ...  worst fractal dimension  target
+559        11.51         23.93  ...                  0.08732       1
+560        14.05         27.15  ...                  0.08321       1
+561        11.20         29.37  ...                  0.05905       1
+562        15.22         30.62  ...                  0.14090       0
+563        20.92         25.09  ...                  0.09873       0
+564        21.56         22.39  ...                  0.07115       0
+565        20.13         28.25  ...                  0.06637       0
+566        16.60         28.08  ...                  0.07820       0
+567        20.60         29.33  ...                  0.12400       0
+568         7.76         24.54  ...                  0.07039       1
+
+[10 rows x 31 columns]
+\nQ2(c) Dimensions: (569, 31)
+\nQ2(d) Columns and dtypes:\n mean radius                float64
+mean texture               float64
+mean perimeter             float64
+mean area                  float64
+mean smoothness            float64
+mean compactness           float64
+mean concavity             float64
+mean concave points        float64
+mean symmetry              float64
+mean fractal dimension     float64
+radius error               float64
+texture error              float64
+perimeter error            float64
+area error                 float64
+smoothness error           float64
+compactness error          float64
+concavity error            float64
+concave points error       float64
+symmetry error             float64
+fractal dimension error    float64
+worst radius               float64
+worst texture              float64
+worst perimeter            float64
+worst area                 float64
+worst smoothness           float64
+worst compactness          float64
+worst concavity            float64
+worst concave points       float64
+worst symmetry             float64
+worst fractal dimension    float64
+target                       int64
+dtype: object
+\nQ2(e) info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 569 entries, 0 to 568
+Data columns (total 31 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   mean radius              569 non-null    float64
+ 1   mean texture             569 non-null    float64
+ 2   mean perimeter           569 non-null    float64
+ 3   mean area                569 non-null    float64
+ 4   mean smoothness          569 non-null    float64
+ 5   mean compactness         569 non-null    float64
+ 6   mean concavity           569 non-null    float64
+ 7   mean concave points      569 non-null    float64
+ 8   mean symmetry            569 non-null    float64
+ 9   mean fractal dimension   569 non-null    float64
+ 10  radius error             569 non-null    float64
+ 11  texture error            569 non-null    float64
+ 12  perimeter error          569 non-null    float64
+ 13  area error               569 non-null    float64
+ 14  smoothness error         569 non-null    float64
+ 15  compactness error        569 non-null    float64
+ 16  concavity error          569 non-null    float64
+ 17  concave points error     569 non-null    float64
+ 18  symmetry error           569 non-null    float64
+ 19  fractal dimension error  569 non-null    float64
+ 20  worst radius             569 non-null    float64
+ 21  worst texture            569 non-null    float64
+ 22  worst perimeter          569 non-null    float64
+ 23  worst area               569 non-null    float64
+ 24  worst smoothness         569 non-null    float64
+ 25  worst compactness        569 non-null    float64
+ 26  worst concavity          569 non-null    float64
+ 27  worst concave points     569 non-null    float64
+ 28  worst symmetry           569 non-null    float64
+ 29  worst fractal dimension  569 non-null    float64
+ 30  target                   569 non-null    int64  
+dtypes: float64(30), int64(1)
+memory usage: 137.9 KB
+\nQ2(e) describe:\n        mean radius  mean texture  ...  worst fractal dimension      target
+count   569.000000    569.000000  ...               569.000000  569.000000
+mean     14.127292     19.289649  ...                 0.083946    0.627417
+std       3.524049      4.301036  ...                 0.018061    0.483918
+min       6.981000      9.710000  ...                 0.055040    0.000000
+25%      11.700000     16.170000  ...                 0.071460    0.000000
+50%      13.370000     18.840000  ...                 0.080040    1.000000
+75%      15.780000     21.800000  ...                 0.092080    1.000000
+max      28.110000     39.280000  ...                 0.207500    1.000000
+
+[8 rows x 31 columns]
+\nQ3(a) Selected columns:\n    mean radius  mean texture  mean area
+0        17.99         10.38     1001.0
+1        20.57         17.77     1326.0
+2        19.69         21.25     1203.0
+3        11.42         20.38      386.1
+4        20.29         14.34     1297.0
+\nQ3(b) Radius above median ( 13.37 ):\n    mean radius  mean texture  ...  worst fractal dimension  target
+0        17.99         10.38  ...                  0.11890       0
+1        20.57         17.77  ...                  0.08902       0
+2        19.69         21.25  ...                  0.08758       0
+4        20.29         14.34  ...                  0.07678       0
+6        18.25         19.98  ...                  0.08368       0
+
+[5 rows x 31 columns]
+\nQ3(c) Target class 0 (malignant):\n    mean radius  mean texture  ...  worst fractal dimension  target
+0        17.99         10.38  ...                  0.11890       0
+1        20.57         17.77  ...                  0.08902       0
+2        19.69         21.25  ...                  0.08758       0
+3        11.42         20.38  ...                  0.17300       0
+4        20.29         14.34  ...                  0.07678       0
+
+[5 rows x 31 columns]
+\nQ3(d) Target 0 AND radius above median:\n    mean radius  mean texture  ...  worst fractal dimension  target
+0        17.99         10.38  ...                  0.11890       0
+1        20.57         17.77  ...                  0.08902       0
+2        19.69         21.25  ...                  0.08758       0
+4        20.29         14.34  ...                  0.07678       0
+6        18.25         19.98  ...                  0.08368       0
+
+[5 rows x 31 columns]
+\nQ3(e) Sorted by mean area descending:\n      mean radius  mean texture  ...  worst fractal dimension  target
+461        27.42         26.27  ...                  0.07427       0
+212        28.11         18.47  ...                  0.05525       0
+180        27.22         21.87  ...                  0.08082       0
+352        25.73         17.46  ...                  0.08815       0
+82         25.22         24.91  ...                  0.10510       0
+
+[5 rows x 31 columns]
+\nQ4(a) Missing counts:\n mean radius                0
+mean texture               0
+mean perimeter             0
+mean area                  0
+mean smoothness            0
+mean compactness           0
+mean concavity             0
+mean concave points        0
+mean symmetry              0
+mean fractal dimension     0
+radius error               0
+texture error              0
+perimeter error            0
+area error                 0
+smoothness error           0
+compactness error          0
+concavity error            0
+concave points error       0
+symmetry error             0
+fractal dimension error    0
+worst radius               0
+worst texture              0
+worst perimeter            0
+worst area                 0
+worst smoothness           0
+worst compactness          0
+worst concavity            0
+worst concave points       0
+worst symmetry             0
+worst fractal dimension    0
+target                     0
+dtype: int64
+\nQ4(b) Missing percentage:\n mean radius                0.0
+mean texture               0.0
+mean perimeter             0.0
+mean area                  0.0
+mean smoothness            0.0
+mean compactness           0.0
+mean concavity             0.0
+mean concave points        0.0
+mean symmetry              0.0
+mean fractal dimension     0.0
+radius error               0.0
+texture error              0.0
+perimeter error            0.0
+area error                 0.0
+smoothness error           0.0
+compactness error          0.0
+concavity error            0.0
+concave points error       0.0
+symmetry error             0.0
+fractal dimension error    0.0
+worst radius               0.0
+worst texture              0.0
+worst perimeter            0.0
+worst area                 0.0
+worst smoothness           0.0
+worst compactness          0.0
+worst concavity            0.0
+worst concave points       0.0
+worst symmetry             0.0
+worst fractal dimension    0.0
+target                     0.0
+dtype: float64
+Q4(c) Applied median to numeric missing values and mode to categorical missing values, only where needed.
+\nQ5(a) Duplicate records before removal: 0
+Q5(b) Removed duplicate rows.\nQ5(c) Invalid measurement/target rows: 0
+Q5(d) Removed rows with negative measurements or target outside 0/1.
+\nQ6(a-d) Data types, names and derived feature updated.\n worst_concave_points       float64
+worst_symmetry             float64
+worst_fractal_dimension    float64
+diagnosis                   object
+mean_area_per_radius       float64
+dtype: object
+\nQ7(a-c) Statistics for mean_radius:\n mean      14.127292
+median    13.370000
+min        6.981000
+max       28.110000
+std        3.524049
+Name: mean_radius, dtype: float64
+\nQ7(d) Mean radius by diagnosis (highest first):\n diagnosis
+Malignant    17.462830
+Benign       12.146524
+Name: mean_radius, dtype: float64
+\nQ8(a) Counts:\n diagnosis
+Benign       357
+Malignant    212
+Name: record_count, dtype: int64
+\nQ8(b) Mean radius by diagnosis:\n diagnosis
+Malignant    17.462830
+Benign       12.146524
+Name: mean_radius_average, dtype: float64
+\nQ8(c-d) Grouped aggregate (sorted):\n            records  mean_radius_mean  ...  mean_area_mean  mean_texture_mean
+diagnosis                             ...                                   
+Malignant      212         17.462830  ...      978.376415          21.604906
+Benign         357         12.146524  ...      462.790196          17.914762
+
+[2 rows x 7 columns]
+\nQ9: CSV and Excel exports verified successfully.
+Cleaned data dimensions: (569, 32)
+\nQ10 report is provided as Data Preparation Report.docx in this folder.

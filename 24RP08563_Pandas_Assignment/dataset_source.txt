@@ -1,0 +1,5 @@
+Dataset: Breast Cancer Wisconsin (Diagnostic)
+Official UCI page: https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+Scikit-learn documentation: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html
+Original CSV included: original_dataset.csv (exported from the genuine dataset bundled in scikit-learn; not fabricated).
+Creation environment had no network access, so the CSV was not freshly downloaded from the UCI site. If direct-download evidence is required, download the matching file from UCI and replace original_dataset.csv.
